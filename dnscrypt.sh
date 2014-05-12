@@ -22,9 +22,9 @@ mkdir -p $SRC
 ############# ###############################################################
 
 mkdir -p $SRC/sodium && cd $SRC/sodium
-$WGET https://github.com/jedisct1/libsodium/releases/download/0.4.5/libsodium-0.4.5.tar.gz
-tar zxvf libsodium-0.4.5.tar.gz
-cd libsodium-0.4.5
+$WGET http://download.libsodium.org/libsodium/snapshots/libsodium-0.5.0.tar.gz
+tar zxvf libsodium-0.5.0.tar.gz
+cd libsodium-0.5.0
 
 LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \
