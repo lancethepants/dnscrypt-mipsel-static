@@ -22,15 +22,16 @@ mkdir -p $SRC
 ############# ###############################################################
 
 mkdir -p $SRC/sodium && cd $SRC/sodium
-$WGET http://download.libsodium.org/libsodium/releases/libsodium-0.5.0.tar.gz
-tar zxvf libsodium-0.5.0.tar.gz
-cd libsodium-0.5.0
+$WGET http://download.libsodium.org/libsodium/releases/libsodium-0.6.1.tar.gz
+tar zxvf libsodium-0.6.1.tar.gz
+cd libsodium-0.6.1
 
 LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \
 CFLAGS=$CFLAGS \
 CXXFLAGS=$CXXFLAGS \
 $CONFIGURE \
+--enable-minimal \
 --enable-static \
 --disable-shared
 
