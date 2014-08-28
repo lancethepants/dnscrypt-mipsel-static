@@ -22,9 +22,9 @@ mkdir -p $SRC
 ############# ###############################################################
 
 mkdir -p $SRC/sodium && cd $SRC/sodium
-$WGET http://download.libsodium.org/libsodium/releases/libsodium-0.6.1.tar.gz
-tar zxvf libsodium-0.6.1.tar.gz
-cd libsodium-0.6.1
+$WGET http://download.libsodium.org/libsodium/releases/libsodium-0.7.0.tar.gz
+tar zxvf libsodium-0.7.0.tar.gz
+cd libsodium-0.7.0
 
 LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \
