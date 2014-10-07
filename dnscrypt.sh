@@ -22,9 +22,9 @@ mkdir -p $SRC
 ############# ###############################################################
 
 mkdir -p $SRC/sodium && cd $SRC/sodium
-$WGET http://download.libsodium.org/libsodium/releases/libsodium-0.7.0.tar.gz
-tar zxvf libsodium-0.7.0.tar.gz
-cd libsodium-0.7.0
+$WGET http://download.libsodium.org/libsodium/releases/libsodium-1.0.0.tar.gz
+tar zxvf libsodium-1.0.0.tar.gz
+cd libsodium-1.0.0
 
 LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \
@@ -43,9 +43,9 @@ make install DESTDIR=$BASE
 ############ ################################################################
 
 mkdir $SRC/dnscrypt && cd $SRC/dnscrypt
-$WGET http://download.dnscrypt.org/dnscrypt-proxy/dnscrypt-proxy-1.4.0.tar.gz
-tar zxvf dnscrypt-proxy-1.4.0.tar.gz
-cd dnscrypt-proxy-1.4.0
+$WGET http://download.dnscrypt.org/dnscrypt-proxy/dnscrypt-proxy-1.4.1.tar.gz
+tar zxvf dnscrypt-proxy-1.4.1.tar.gz
+cd dnscrypt-proxy-1.4.1
 
 LDFLAGS="-Wl,-static -static -static-libgcc -s $LDFLAGS" \
 CPPFLAGS=$CPPFLAGS \
