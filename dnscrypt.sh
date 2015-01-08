@@ -43,9 +43,9 @@ make install DESTDIR=$BASE
 ############ ################################################################
 
 mkdir $SRC/dnscrypt && cd $SRC/dnscrypt
-$WGET http://download.dnscrypt.org/dnscrypt-proxy/dnscrypt-proxy-1.4.2.tar.gz
-tar zxvf dnscrypt-proxy-1.4.2.tar.gz
-cd dnscrypt-proxy-1.4.2
+$WGET http://download.dnscrypt.org/dnscrypt-proxy/dnscrypt-proxy-1.4.3.tar.gz
+tar zxvf dnscrypt-proxy-1.4.3.tar.gz
+cd dnscrypt-proxy-1.4.3
 
 LDFLAGS="-Wl,-static -static -static-libgcc -s $LDFLAGS" \
 CPPFLAGS=$CPPFLAGS \
